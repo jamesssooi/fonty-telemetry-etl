@@ -1,0 +1,27 @@
+{
+  /** Configure the TypeScript compiler. */
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+    }
+  },
+
+  /** Include these directories/patterns for TypeScript to compile */
+  "include": [
+    "src/**/*"
+  ],
+
+  /** Exclude these directories from being compiled. */
+  "exclude": [
+    "node_modules"
+  ]
+}
